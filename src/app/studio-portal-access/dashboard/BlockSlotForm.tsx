@@ -29,7 +29,7 @@ export default function BlockSlotForm() {
     <form onSubmit={handleSubmit} style={{ background: 'var(--surface)', padding: '1.5rem', borderRadius: '6px', border: '1px solid var(--surface-border)' }}>
       <div className="form-group" style={{ marginBottom: '1rem' }}>
         <label>Date</label>
-        <input type="date" value={date} onChange={e => setDate(e.target.value)} required style={{ marginBottom: 0 }} />
+        <input type="date" value={date} onChange={e => setDate(e.target.value)} required style={{ marginBottom: 0, minHeight: '56px', width: '100%', boxSizing: 'border-box' }} />
       </div>
       
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
