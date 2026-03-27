@@ -2,7 +2,7 @@
 
 import { PrismaClient } from '@prisma/client';
 import { revalidatePath } from 'next/cache';
-import { put } from '@vercel/blob';
+import { put, del } from '@vercel/blob';
 
 const prisma = new PrismaClient();
 
@@ -31,6 +31,18 @@ export async function uploadPortfolioImage(formData: FormData) {
 }
 
 export async function deletePortfolioImage(id: string) {
+  const image = await prisma.portfolioImage.findUnique({
+    where: { id }
+  });
+
+  if (image && image.imageUrl) {
+    try {
+      await del(image.imageUrl);
+    } catch (e) {
+      console.error('Failed to delete blob', e);
+    }
+  }
+
   await prisma.portfolioImage.delete({
     where: { id }
   });
