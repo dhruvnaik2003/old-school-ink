@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Sidebar() {
   const handleLogout = () => {
@@ -10,7 +11,10 @@ export default function Sidebar() {
 
   return (
     <aside className="admin-sidebar">
-      <div className="admin-sidebar-brand">OLD SCHOOL INK ADMIN</div>
+      <div className="admin-sidebar-brand" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+        <Image src="/logo.png" alt="Admin Logo" width={80} height={80} style={{ borderRadius: '8px' }} priority />
+        <span>OLD SCHOOL INK</span>
+      </div>
       <nav className="admin-nav">
         <Link href="/studio-portal-access/dashboard">Bookings Calendar</Link>
         <Link href="/studio-portal-access/dashboard/portfolio">Portfolio Manager</Link>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { PrismaClient } from '@prisma/client';
 import Gallery from '@/components/Gallery';
 import './page.css';
@@ -20,6 +21,7 @@ export default async function Home() {
         <div className="hero-overlay"></div>
         <div className="hero-bg"></div>
         <div className="hero-content fade-in">
+          <Image src="/logo.png" alt="Old School Ink" width={120} height={120} style={{ marginBottom: '1.5rem', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.5)' }} priority />
           <h1>Art That<br/><span className="highlight">Leaves a Mark.</span></h1>
           <p className="subtitle">High-end custom tattooing and piercing in the heart of the city.</p>
           <div className="cta-group">

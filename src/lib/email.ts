@@ -15,7 +15,8 @@ export async function sendAdminNewBookingAlert(booking: any) {
       subject: `New Booking Request: ${booking.clientName}`,
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; color: #333;">
-          <h1 style="color: #e50914;">New Booking Request</h1>
+          <img src="https://old-school-ink.vercel.app/logo.png" alt="Old School Ink" width="80" style="border-radius: 8px; margin-bottom: 10px;" />
+          <h1 style="color: #e50914; margin-top: 0;">New Booking Request</h1>
           <p><strong>Name:</strong> ${booking.clientName}</p>
           <p><strong>Email:</strong> ${booking.clientEmail}</p>
           <p><strong>Date requested:</strong> ${new Date(booking.date).toLocaleString('en-US', { timeZone: 'UTC' })}</p>
@@ -60,7 +61,8 @@ export async function sendClientBookingUpdate(booking: any, type: 'RECEIVED' | '
       subject: subjects[type],
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
-          <h1 style="color: #e50914;">OLD SCHOOL INK</h1>
+          <img src="https://old-school-ink.vercel.app/logo.png" alt="Old School Ink" width="80" style="border-radius: 8px; margin-bottom: 10px;" />
+          <h1 style="color: #e50914; margin-top: 0;">OLD SCHOOL INK</h1>
           <p>Hi ${booking.clientName},</p>
           <p>${messages[type]}</p>
           <p><strong>Appointment Date:</strong> ${new Date(booking.date).toLocaleString('en-US', { timeZone: 'UTC', dateStyle: 'medium', timeStyle: 'short' })}</p>

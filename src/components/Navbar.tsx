@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,10 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link href="/" className="navbar-brand" onClick={() => setIsOpen(false)}>OLD SCHOOL INK</Link>
+      <Link href="/" className="navbar-brand" onClick={() => setIsOpen(false)} style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
+        <Image src="/logo.png" alt="Old School Ink" width={45} height={45} style={{ borderRadius: '4px' }} priority />
+        <span style={{ fontSize: '1.5rem', marginTop: '4px' }}>OLD SCHOOL INK</span>
+      </Link>
       
       <button className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
