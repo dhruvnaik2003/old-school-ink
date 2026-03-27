@@ -21,7 +21,7 @@ export default async function Home() {
         <div className="hero-overlay"></div>
         <div className="hero-bg"></div>
         <div className="hero-content fade-in">
-          <Image src="/logo.png" alt="Old School Ink" width={120} height={120} style={{ marginBottom: '1.5rem', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.5)' }} priority />
+          <Image src="/logo.png" alt="Old School Ink" width={160} height={160} style={{ marginBottom: '2rem' }} priority />
           <h1>Art That<br/><span className="highlight">Leaves a Mark.</span></h1>
           <p className="subtitle">High-end custom tattooing and piercing in the heart of the city.</p>
           <div className="cta-group">
