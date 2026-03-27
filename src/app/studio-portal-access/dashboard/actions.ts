@@ -38,3 +38,10 @@ export async function blockSlot(dateStr: string, fromTime: string, toTime: strin
 
   revalidatePath('/studio-portal-access/dashboard');
 }
+
+export async function unblockSlot(id: string) {
+  await prisma.blockedSlot.delete({
+    where: { id }
+  });
+  revalidatePath('/studio-portal-access/dashboard');
+}

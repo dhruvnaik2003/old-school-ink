@@ -14,6 +14,26 @@ export default async function DashboardPage() {
     orderBy: { date: 'asc' }
   });
 
+  const blockedSlots = await prisma.blockedSlot.findMany({
+    orderBy: { date: 'asc' }
+  });
+
+  const mergedEvents = [
+    ...bookings,
+    ...blockedSlots.map(slot => ({
+      id: slot.id,
+      clientName: slot.reason || 'Blocked Slot',
+      clientEmail: 'N/A',
+      clientPhone: 'N/A',
+      placement: 'Manual',
+      size: 'N/A',
+      description: 'Admin manually blocked slot against walk-ins.',
+      date: slot.date,
+      status: 'BLOCKED',
+      isBlockedSlot: true
+    }))
+  ].sort((a: any, b: any) => new Date(a.date).getTime() - new Date(b.date).getTime());
+
   return (
     <>
       <div className="admin-header">
@@ -23,7 +43,7 @@ export default async function DashboardPage() {
       <div className="dashboard-grid">
         <div>
           <h2 style={{marginBottom: '1rem', color: 'var(--accent)'}}>Upcoming Bookings</h2>
-          <BookingList bookings={bookings} />
+          <BookingList bookings={mergedEvents} />
         </div>
         
         <div>

@@ -135,6 +135,7 @@
 .status-APPROVED { background: #059669; color: #fff; }
 .status-CANCELED { background: #dc2626; color: #fff; }
 .status-RESCHEDULED { background: #2563eb; color: #fff; }
+.status-BLOCKED { background: #4b5563; color: #fff; }
 
 .dashboard-grid {
   display: grid;

@@ -1,18 +1,24 @@
 "use client";
 
-import { updateBookingStatus } from './actions';
+import { updateBookingStatus, unblockSlot } from './actions';
 import { useState } from 'react';
 
 export default function BookingList({ bookings }: { bookings: any[] }) {
   const [loadingId, setLoadingId] = useState<string | null>(null);
   const [cancelingId, setCancelingId] = useState<string | null>(null);
 
-  const handleStatusUpdate = async (id: string, status: string) => {
+  const handleStatusUpdate = async (id: string, status: string, isBlockedSlot?: boolean) => {
     if (status === 'CANCELED') {
       setCancelingId(id);
     }
     setLoadingId(id);
-    await updateBookingStatus(id, status);
+    
+    if (isBlockedSlot && status === 'CANCELED') {
+      await unblockSlot(id);
+    } else {
+      await updateBookingStatus(id, status);
+    }
+    
     setLoadingId(null);
   };
 
@@ -70,6 +76,15 @@ export default function BookingList({ bookings }: { bookings: any[] }) {
                 disabled={loadingId === booking.id}
                 style={{ background: '#dc2626' }}>
                 Cancel
+              </button>
+            )}
+            {booking.isBlockedSlot && (
+              <button 
+                className="btn btn-small" 
+                onClick={() => handleStatusUpdate(booking.id, 'CANCELED', true)}
+                disabled={loadingId === booking.id}
+                style={{ background: '#4b5563' }}>
+                Unblock Slot
               </button>
             )}
           </div>
