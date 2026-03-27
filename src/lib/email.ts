@@ -14,11 +14,18 @@ export async function sendAdminNewBookingAlert(booking: any) {
       to: ['dhruvnaik1315@gmail.com'], // The admin's verified email account
       subject: `New Booking Request: ${booking.clientName}`,
       html: `
-        <h1>New Booking Request</h1>
-        <p><strong>Name:</strong> ${booking.clientName}</p>
-        <p><strong>Email:</strong> ${booking.clientEmail}</p>
-        <p><strong>Date requested:</strong> ${new Date(booking.date).toLocaleString('en-US', { timeZone: 'UTC' })}</p>
-        <p><strong>Placement & Size:</strong> ${booking.placement} (${booking.size})</p>
+        <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; color: #333;">
+          <h1 style="color: #e50914;">New Booking Request</h1>
+          <p><strong>Name:</strong> ${booking.clientName}</p>
+          <p><strong>Email:</strong> ${booking.clientEmail}</p>
+          <p><strong>Date requested:</strong> ${new Date(booking.date).toLocaleString('en-US', { timeZone: 'UTC' })}</p>
+          <p><strong>Placement & Size:</strong> ${booking.placement} (${booking.size})</p>
+          <br/>
+          <div style="margin-top: 20px;">
+            <a href="https://old-school-ink.vercel.app/api/bookings/action?id=${booking.id}&status=APPROVED" style="display: inline-block; padding: 12px 24px; background-color: #059669; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; margin-right: 10px;">Approve Request</a>
+            <a href="https://old-school-ink.vercel.app/api/bookings/action?id=${booking.id}&status=CANCELED" style="display: inline-block; padding: 12px 24px; background-color: #dc2626; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">Reject Request</a>
+          </div>
+        </div>
       `
     });
   } catch (err) {
