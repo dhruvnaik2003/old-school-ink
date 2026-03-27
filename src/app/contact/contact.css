@@ -1,0 +1,45 @@
+.contact-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact-header h1 {
+  font-size: 3.5rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.faq-section h2, .map-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--accent);
+}
+
+.faq-item {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--surface-border);
+  padding-bottom: 1.5rem;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--foreground);
+}
+
+.map-container {
+  margin-top: 1.5rem;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--surface-border);
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,123 @@
+.book-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.book-header h1 {
+  font-size: 3.5rem;
+}
+
+.book-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--surface);
+  padding: 3rem;
+  border-radius: 8px;
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  color: var(--foreground-muted);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.75rem;
+}
+
+.slot-btn {
+  background: var(--background);
+  color: var(--foreground);
+  border: 1px solid var(--surface-border);
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.2s;
+  font-size: 0.95rem;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.slot-btn:hover {
+  border-color: var(--accent);
+  background: rgba(229, 9, 20, 0.1);
+  transform: none;
+  box-shadow: none;
+}
+
+.slot-btn.selected {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.file-upload input {
+  padding: 0.8rem;
+  background: rgba(255,255,255,0.05);
+  cursor: pointer;
+}
+
+.submit-btn {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.error-banner {
+  background: rgba(229, 9, 20, 0.2);
+  border: 1px solid var(--accent);
+  color: #ffb3b8;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.success-message {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.success-message h2 {
+  color: var(--accent);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.success-message p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .book-content {
+    padding: 1.5rem;
+  }
+}
