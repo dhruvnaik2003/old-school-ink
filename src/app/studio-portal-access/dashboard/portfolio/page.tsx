@@ -16,7 +16,7 @@ export default async function AdminPortfolio() {
         <h1>Portfolio Manager</h1>
       </div>
       
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '2rem' }}>
+      <div className="dashboard-grid">
         <div>
           <h2 style={{marginBottom: '1rem', color: 'var(--accent)'}}>Current Gallery</h2>
           <PortfolioGrid images={images} />
