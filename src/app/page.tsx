@@ -52,6 +52,24 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* Artist Section */}
+      <section id="artist" className="intro container" style={{ paddingTop: '2rem' }}>
+        <div className="intro-grid">
+          <div className="intro-image fade-in">
+            <div className="img-placeholder" style={{ background: "url('https://images.unsplash.com/photo-1590246814883-578ae11ecbc8?q=80&w=1000&auto=format&fit=crop') center/cover no-repeat" }}></div>
+          </div>
+          <div className="intro-text fade-in">
+            <h2>The Artist</h2>
+            <p>
+              With over a decade of dedication to the craft, we blend classical tattooing techniques with modern aesthetics to create truly unique, custom pieces built specifically for your body structure.
+            </p>
+            <p>
+              Driven by an obsessive attention to detail, we take the time to understand your vision, ensuring every line and shadow perfectly captures the meaning behind your tattoo and stands the test of time.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Portfolio Section */}
       <section id="portfolio" className="portfolio-page container fade-in" style={{ paddingTop: '4rem', paddingBottom: '4rem', scrollMarginTop: '100px' }}>
         <h2 style={{textAlign: 'center', fontSize: '4rem', marginBottom: '1rem'}}>Our <span className="highlight">Work</span></h2>
