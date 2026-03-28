@@ -65,7 +65,7 @@ export default function BookingList({ bookings }: { bookings: any[] }) {
                   onClick={() => handleStatusUpdate(booking.id, 'CANCELED')}
                   disabled={loadingId === booking.id}
                   style={{ background: '#dc2626' }}>
-                  Cancel
+                  Reject
                 </button>
               </>
             )}
@@ -75,7 +75,7 @@ export default function BookingList({ bookings }: { bookings: any[] }) {
                 onClick={() => handleStatusUpdate(booking.id, 'CANCELED')}
                 disabled={loadingId === booking.id}
                 style={{ background: '#dc2626' }}>
-                Cancel
+                Reject
               </button>
             )}
             {booking.isBlockedSlot && (
