@@ -4,8 +4,8 @@
   --surface-border: #1a1a1a;
   --foreground: #cccccc;
   --foreground-muted: #888888;
-  --accent: #8a6344; /* Antique Muted Copper */
-  --accent-hover: #a67c59; /* Brighter Gold */
+  --accent: #b39371; /* Brighter Antique Copper for visibility */
+  --accent-hover: #d4b494; /* Light Sandstone */
   
   --font-body: var(--font-inter), sans-serif;
   --font-heading: var(--font-cormorant), serif;
@@ -96,31 +96,29 @@ input:focus, textarea:focus, select:focus {
   box-shadow: 0 0 15px rgba(138, 99, 68, 0.2);
 }
 
-/* Button Component - Gothic Theatrical Style */
 button, .btn {
   display: inline-block;
-  background-color: transparent;
-  color: var(--accent);
+  background-color: rgba(179, 147, 113, 0.15); /* More visible fill */
+  color: #d4b494; /* Light Sandstone for max contrast */
   border: 1px solid var(--accent);
-  padding: 1.2rem 3rem;
+  padding: 1rem 2.5rem;
   font-family: var(--font-heading);
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 0.3em;
   cursor: pointer;
   border-radius: 0;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   position: relative;
   overflow: hidden;
-  text-shadow: 0 0 10px rgba(138, 99, 68, 0.3);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
 
 button:hover, .btn:hover {
   background-color: var(--accent);
   color: #000;
   transform: translateY(-2px);
-  box-shadow: 0 0 30px rgba(138, 99, 68, 0.4);
-  text-shadow: none;
+  box-shadow: 0 0 30px rgba(179, 147, 113, 0.4);
 }
 
 button:disabled {
@@ -149,19 +147,19 @@ button:disabled {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Navigation - Atmospheric Float */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  padding: 2rem 3rem;
+  padding: 1.5rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.85) 50%, transparent 100%);
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.8); /* Solid-ish dark glass */
+  border-bottom: 1px solid rgba(138, 99, 68, 0.1);
+  backdrop-filter: blur(15px);
   transition: all 0.4s ease;
 }
 
