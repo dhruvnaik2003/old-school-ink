@@ -30,18 +30,19 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Intro Section - Centered Symmetry */}
+      {/* Intro Section - Classical Grid */}
       <section id="studio" className="intro container fade-in">
-        <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
-          <h2 className="highlight">The Studio</h2>
-          <p>
-            Welcome to the threshold of Old School Ink. We believe that every tattoo is a piece of living history. 
-            Our sanctuary specializes in shadow-work realism, traditional archetypes, and surgical fine-line precision.
-          </p>
-          <div className="img-placeholder" style={{ marginTop: '4rem' }}></div>
-          <p style={{ marginTop: '4rem' }}>
-            We maintain a sterile, theatrical environment where the boundary between artist and client dissolves into the creation of eternal art.
-          </p>
+        <div className="intro-grid">
+          <div className="intro-text">
+            <h2 className="highlight">The Studio</h2>
+            <p>
+              Welcome to the threshold of Old School Ink. We believe that every tattoo is a piece of living history. 
+              Our sanctuary specializes in shadow-work realism, traditional archetypes, and surgical fine-line precision.
+            </p>
+          </div>
+          <div className="intro-image">
+            <div className="img-placeholder"></div>
+          </div>
         </div>
       </section>
 
