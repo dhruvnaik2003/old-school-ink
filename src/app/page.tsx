@@ -118,8 +118,9 @@ export default async function Home() {
 
           <section className="map-section">
             <h2 className="highlight" style={{ fontSize: '2rem', marginBottom: '2rem' }}>LOCATION</h2>
-            <p style={{ marginBottom: '2rem', fontSize: '1.2rem' }}>
-              <strong>CONTACT NUMBER:</strong> <a href="tel:+919742980840" style={{ color: 'var(--accent)' }}>+91 9742980840</a>
+            <p style={{ marginBottom: '2rem' }}>
+              <strong style={{ fontSize: '1rem', color: 'var(--foreground-muted)' }}>CONTACT NUMBER:</strong><br/>
+              <a href="tel:+919742980840" style={{ color: 'var(--accent)', fontSize: '1.6rem', fontWeight: '500', marginTop: '0.5rem', display: 'inline-block' }}>+91 9742980840</a>
             </p>
             <p style={{ marginBottom: '2rem' }}># 4, shop, 3, 13th Cross Rd, opposite to KODAVA SAMAJA, Vasanth Nagar, Bengaluru, Karnataka 560001</p>
             <div className="map-container" style={{ border: '1px solid var(--surface-border)', filter: 'grayscale(1) contrast(1.2) brightness(0.8)' }}>
