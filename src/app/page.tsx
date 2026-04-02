@@ -24,7 +24,7 @@ export default async function Home() {
           <Image src="/logo.png" alt="Old School Ink" width={220} height={220} style={{ marginBottom: '3rem' }} priority />
           <h1>ART THAT<br/><span className="highlight">LEAVES A MARK.</span></h1>
           <div className="cta-group">
-            <Link href="/book" className="btn">START YOUR JOURNEY</Link>
+            <Link href="/book" className="btn">BOOK NOW</Link>
             <a href="#portfolio" className="btn">VIEW THE PORTFOLIO</a>
           </div>
         </div>

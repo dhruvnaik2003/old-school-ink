@@ -66,9 +66,17 @@
 
 .cta-group {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .cta-group {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
 }
 
 /* Intro & General Sections */
