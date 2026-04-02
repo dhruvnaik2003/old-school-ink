@@ -116,6 +116,10 @@ export default async function Home() {
               <h3>Ascension & Aftercare</h3>
               <p>Gently cleanse the mark with unscented antibacterial soap. Let the art breathe. Avoid sun and submersion for the first 14 days.</p>
             </div>
+            <div className="faq-item">
+              <h3>Refinement & Touch-ups</h3>
+              <p>Eternal art may require a final ritual to perfect the contrast. We offer a single refinement session within 90 days of the original etching.</p>
+            </div>
           </section>
 
           <section className="map-section">
