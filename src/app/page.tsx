@@ -25,7 +25,7 @@ export default async function Home() {
           <h1>ART THAT<br/><span className="highlight">LEAVES A MARK.</span></h1>
           <div className="cta-group">
             <Link href="/book" className="btn">START YOUR JOURNEY</Link>
-            <a href="#portfolio" className="btn" style={{ background: 'transparent', borderColor: 'rgba(138, 99, 68, 0.4)' }}>VIEW THE PORTFOLIO</a>
+            <a href="#portfolio" className="btn">VIEW THE PORTFOLIO</a>
           </div>
         </div>
       </section>
@@ -77,11 +77,6 @@ export default async function Home() {
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn"
-            style={{ 
-              borderColor: 'rgba(138, 99, 68, 0.3)',
-              fontSize: '0.9rem',
-              padding: '0.8rem 2rem'
-            }}
           >
             DISCOVER MORE ON INSTAGRAM
           </a>
