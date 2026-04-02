@@ -98,27 +98,29 @@ input:focus, textarea:focus, select:focus {
 
 button, .btn {
   display: inline-block;
-  background-color: rgba(179, 147, 113, 0.15); /* More visible fill */
-  color: #d4b494; /* Light Sandstone for max contrast */
+  background-color: var(--accent); /* Solid background for max visibility */
+  color: #000; /* High contrast text */
   border: 1px solid var(--accent);
-  padding: 1rem 2.5rem;
+  padding: 1.1rem 2.8rem;
   font-family: var(--font-heading);
   text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 0.3em;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
   cursor: pointer;
   border-radius: 0;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
 }
 
 button:hover, .btn:hover {
-  background-color: var(--accent);
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
   color: #000;
   transform: translateY(-2px);
-  box-shadow: 0 0 30px rgba(179, 147, 113, 0.4);
+  box-shadow: 0 8px 30px rgba(179, 147, 113, 0.4);
 }
 
 button:disabled {
