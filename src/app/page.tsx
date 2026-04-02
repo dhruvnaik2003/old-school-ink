@@ -65,7 +65,7 @@ export default async function Home() {
       </section>
 
       {/* Portfolio Section */}
-      <section id="portfolio" className="portfolio-page container fade-in" style={{ padding: '12rem 2rem', background: '#000' }}>
+      <section id="portfolio" className="portfolio-page container fade-in" style={{ padding: '6rem 2rem', background: '#000' }}>
         <div style={{ textAlign: 'center', marginBottom: '6rem' }}>
           <h2 style={{ fontSize: '5rem' }}>IMAGE <span className="highlight">GALLERY</span></h2>
           <p className="subtitle">Witness the transition from flesh to art.</p>
@@ -90,8 +90,8 @@ export default async function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="contact-page container fade-in" style={{ padding: '12rem 2rem', background: 'linear-gradient(to top, #080808, #000)' }}>
-        <div style={{ textAlign: 'center', marginBottom: '8rem' }}>
+      <section id="contact" className="contact-page container fade-in" style={{ padding: '6rem 2rem', background: 'linear-gradient(to top, #080808, #000)' }}>
+        <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <h2 style={{ fontSize: '4rem' }}>Choose Your <span className="highlight">Path</span></h2>
           <p className="subtitle">Find our sanctuary and prepare for yours.</p>
         </div>
