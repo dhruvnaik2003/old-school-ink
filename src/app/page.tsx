@@ -23,7 +23,6 @@ export default async function Home() {
         <div className="hero-content fade-in">
           <Image src="/logo.png" alt="Old School Ink" width={220} height={220} style={{ marginBottom: '3rem' }} priority />
           <h1>ART THAT<br/><span className="highlight">LEAVES A MARK.</span></h1>
-          <p className="subtitle">High-end tattoo theatre & gothic art gallery.</p>
           <div className="cta-group">
             <Link href="/book" className="btn">START YOUR JOURNEY</Link>
             <a href="#portfolio" className="btn" style={{ background: 'transparent', borderColor: 'rgba(138, 99, 68, 0.4)' }}>VIEW THE PORTFOLIO</a>
