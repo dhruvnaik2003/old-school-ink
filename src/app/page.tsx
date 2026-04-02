@@ -50,7 +50,7 @@ export default async function Home() {
       <section id="artist" className="intro container fade-in" style={{ background: '#050505', borderTop: 'none' }}>
         <div className="intro-grid">
           <div className="intro-image">
-            <div className="img-placeholder" style={{ height: '700px', background: "url('https://images.unsplash.com/photo-1590246814883-578ae11ecbc8?q=80&w=1000&auto=format&fit=crop') center/cover no-repeat" }}></div>
+            <div className="img-placeholder" style={{ height: '700px', background: "url('/artist.png') center/cover no-repeat" }}></div>
           </div>
           <div className="intro-text">
             <h2 className="highlight">The Artist</h2>
