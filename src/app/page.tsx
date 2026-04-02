@@ -93,7 +93,6 @@ export default async function Home() {
       <section id="contact" className="contact-page container fade-in" style={{ padding: '6rem 2rem', background: 'linear-gradient(to top, #080808, #000)' }}>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <h2 style={{ fontSize: '4rem' }}>Choose Your <span className="highlight">Path</span></h2>
-          <p className="subtitle">Find our sanctuary and prepare for yours.</p>
         </div>
 
         <div className="contact-grid">
