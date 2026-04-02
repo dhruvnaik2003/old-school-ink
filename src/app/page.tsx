@@ -49,9 +49,6 @@ export default async function Home() {
       {/* Artist Section - Reversed Layout */}
       <section id="artist" className="intro container fade-in" style={{ background: '#050505', borderTop: 'none' }}>
         <div className="intro-grid">
-          <div className="intro-image">
-            <div className="img-placeholder" style={{ height: '700px', background: "url('/artist.png') center/cover no-repeat" }}></div>
-          </div>
           <div className="intro-text">
             <h2 className="highlight">The Artist</h2>
             <p>
@@ -60,6 +57,9 @@ export default async function Home() {
             <p>
               Driven by an obsessive mastery of detail, we explore the depths of your intent to ensure every etching is a ritualized expression of your inner landscape.
             </p>
+          </div>
+          <div className="intro-image">
+            <div className="img-placeholder" style={{ height: '700px', background: "url('/artist.png') center/cover no-repeat" }}></div>
           </div>
         </div>
       </section>
