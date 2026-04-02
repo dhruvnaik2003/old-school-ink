@@ -97,14 +97,17 @@ input:focus, textarea:focus, select:focus {
 }
 
 button, .btn {
-  display: inline-block;
-  background-color: var(--accent); /* Solid background for max visibility */
-  color: #000; /* High contrast text */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--accent);
+  color: #000;
   border: 1px solid var(--accent);
   padding: 1.1rem 2.8rem;
   font-family: var(--font-heading);
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.2em;
   cursor: pointer;
@@ -113,6 +116,7 @@ button, .btn {
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  line-height: 1; /* Helps with vertical centering */
 }
 
 button:hover, .btn:hover {
