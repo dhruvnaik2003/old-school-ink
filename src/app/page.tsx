@@ -21,135 +21,114 @@ export default async function Home() {
         <div className="hero-overlay"></div>
         <div className="hero-bg"></div>
         <div className="hero-content fade-in">
-          <Image src="/logo.png" alt="Old School Ink" width={160} height={160} style={{ marginBottom: '2rem' }} priority />
-          <h1>Art That<br/><span className="highlight">Leaves a Mark.</span></h1>
-          <p className="subtitle">High-end custom tattooing and piercing in the heart of the city.</p>
+          <Image src="/logo.png" alt="Old School Ink" width={220} height={220} style={{ marginBottom: '3rem' }} priority />
+          <h1>ART THAT<br/><span className="highlight">LEAVES A MARK.</span></h1>
+          <p className="subtitle">High-end tattoo theatre & gothic art gallery.</p>
           <div className="cta-group">
-            <Link href="/book" className="btn">Book a Consultation</Link>
-            <a href="#portfolio" className="btn-outline">View Portfolio</a>
+            <Link href="/book" className="btn">START YOUR JOURNEY</Link>
+            <a href="#portfolio" className="btn" style={{ background: 'transparent', borderColor: 'rgba(138, 99, 68, 0.4)' }}>VIEW THE PORTFOLIO</a>
           </div>
         </div>
       </section>
 
-      {/* Intro Section */}
-      <section id="studio" className="intro container">
-        <div className="intro-grid">
-          <div className="intro-text fade-in">
-            <h2>The Studio</h2>
-            <p>
-              Welcome to Old School Ink. We believe that every tattoo tells a story. Our award-winning artists 
-              specialize in a variety of styles including black and grey realism, traditional, and 
-              fine-line micro tattoos.
-            </p>
-            <p>
-              We maintain the highest standards of hygiene and work closely with each client to 
-              deliver a piece of art they will cherish forever.
-            </p>
-          </div>
-          <div className="intro-image fade-in">
-            <div className="img-placeholder"></div>
-          </div>
+      {/* Intro Section - Centered Symmetry */}
+      <section id="studio" className="intro container fade-in">
+        <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
+          <h2 className="highlight">The Studio</h2>
+          <p>
+            Welcome to the threshold of Old School Ink. We believe that every tattoo is a piece of living history. 
+            Our sanctuary specializes in shadow-work realism, traditional archetypes, and surgical fine-line precision.
+          </p>
+          <div className="img-placeholder" style={{ marginTop: '4rem' }}></div>
+          <p style={{ marginTop: '4rem' }}>
+            We maintain a sterile, theatrical environment where the boundary between artist and client dissolves into the creation of eternal art.
+          </p>
         </div>
       </section>
 
-      {/* Artist Section */}
-      <section id="artist" className="intro container" style={{ paddingTop: '2rem' }}>
+      {/* Artist Section - Reversed Layout */}
+      <section id="artist" className="intro container fade-in" style={{ background: '#050505', borderTop: 'none' }}>
         <div className="intro-grid">
-          <div className="intro-image fade-in">
-            <div className="img-placeholder" style={{ background: "url('https://images.unsplash.com/photo-1590246814883-578ae11ecbc8?q=80&w=1000&auto=format&fit=crop') center/cover no-repeat" }}></div>
+          <div className="intro-image">
+            <div className="img-placeholder" style={{ height: '700px', background: "url('https://images.unsplash.com/photo-1590246814883-578ae11ecbc8?q=80&w=1000&auto=format&fit=crop') center/cover no-repeat" }}></div>
           </div>
-          <div className="intro-text fade-in">
-            <h2>The Artist</h2>
+          <div className="intro-text">
+            <h2 className="highlight">The Artist</h2>
             <p>
-              With over a decade of dedication to the craft, we blend classical tattooing techniques with modern aesthetics to create truly unique, custom pieces built specifically for your body structure.
+              A decade spent in the pursuit of the perfect shadow. We blend ancient tattooing philosophy with surrealist aesthetics to forge armor specifically for your spirit.
             </p>
             <p>
-              Driven by an obsessive attention to detail, we take the time to understand your vision, ensuring every line and shadow perfectly captures the meaning behind your tattoo and stands the test of time.
+              Driven by an obsessive mastery of detail, we explore the depths of your intent to ensure every etching is a ritualized expression of your inner landscape.
             </p>
           </div>
         </div>
       </section>
 
       {/* Portfolio Section */}
-      <section id="portfolio" className="portfolio-page container fade-in" style={{ paddingTop: '4rem', paddingBottom: '4rem', scrollMarginTop: '100px' }}>
-        <h2 style={{textAlign: 'center', fontSize: '4rem', marginBottom: '1rem'}}>Our <span className="highlight">Work</span></h2>
-        <p className="subtitle" style={{textAlign: 'center', marginBottom: '2rem'}}>A curated collection of our timeless tattoos.</p>
+      <section id="portfolio" className="portfolio-page container fade-in" style={{ padding: '12rem 2rem', background: '#000' }}>
+        <div style={{ textAlign: 'center', marginBottom: '6rem' }}>
+          <h2 style={{ fontSize: '5rem' }}>IMAGE <span className="highlight">GALLERY</span></h2>
+          <p className="subtitle">Witness the transition from flesh to art.</p>
+        </div>
         
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-          <p style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--foreground-muted)' }}>Checkout some of our new tattoos</p>
           <a 
             href="https://www.instagram.com/old_school_ink_97" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="instagram-btn"
+            className="btn"
             style={{ 
-              display: 'inline-flex', 
-              alignItems: 'center',
-              gap: '0.5rem',
-              padding: '0.8rem 2rem', 
-              fontSize: '1rem', 
-              background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)', 
-              color: 'white', 
-              textDecoration: 'none', 
-              borderRadius: '30px', 
-              fontFamily: 'var(--font-heading)',
-              textTransform: 'uppercase',
-              letterSpacing: '1px',
-              boxShadow: '0 4px 15px rgba(204, 35, 102, 0.4)',
-              transition: 'transform 0.2s ease'
+              borderColor: 'rgba(138, 99, 68, 0.3)',
+              fontSize: '0.9rem',
+              padding: '0.8rem 2rem'
             }}
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-            Instagram
+            DISCOVER MORE ON INSTAGRAM
           </a>
         </div>
         
         {images.length === 0 ? (
-          <p style={{ textAlign: 'center', color: '#888' }}>Check back later for new artwork updates.</p>
+          <p style={{ textAlign: 'center', color: '#444' }}>The gallery is currently cloaked. Check back soon.</p>
         ) : (
           <Gallery images={images} />
         )}
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="contact-page container fade-in" style={{ paddingTop: '4rem', paddingBottom: '4rem', scrollMarginTop: '100px' }}>
-        <div className="contact-header" style={{ marginBottom: '4rem' }}>
-          <h2 style={{ fontSize: '4rem' }}>Visit the <span className="highlight">Studio</span></h2>
-          <p className="subtitle">Find us and prepare for your appointment.</p>
+      <section id="contact" className="contact-page container fade-in" style={{ padding: '12rem 2rem', background: 'linear-gradient(to top, #080808, #000)' }}>
+        <div style={{ textAlign: 'center', marginBottom: '8rem' }}>
+          <h2 style={{ fontSize: '4rem' }}>Choose Your <span className="highlight">Path</span></h2>
+          <p className="subtitle">Find our sanctuary and prepare for yours.</p>
         </div>
 
         <div className="contact-grid">
           <section className="faq-section">
-            <h2>Policies & FAQ</h2>
+            <h2 className="highlight" style={{ fontSize: '2rem', marginBottom: '2rem' }}>SACRED POLICIES</h2>
             <div className="faq-item">
-              <h3>How do I prepare for my appointment?</h3>
-              <p>Ensure you are well-rested, have eaten a good meal, and are fully hydrated. Do not consume alcohol 24 hours prior.</p>
+              <h3>The Blood Ritual</h3>
+              <p>Ensure you are well-rested, nourished, and hydrated. The body must be strong for the mind to be clear. No alcohol 24 hours prior.</p>
             </div>
             <div className="faq-item">
-              <h3>What is your deposit policy?</h3>
-              <p>All bookings require a non-refundable deposit which goes towards the final cost of your tattoo. Rescheduling requires 48-hour notice.</p>
+              <h3>The Covenant</h3>
+              <p>All bookings require a non-refundable sacrifice (deposit) to secure your time. We ask for 48 hours notice for any rescheduling.</p>
             </div>
             <div className="faq-item">
-              <h3>Aftercare Instructions</h3>
-              <p>Keep the bandage on for 2-4 hours. Wash gently with unscented antibacterial soap. Apply a thin layer of recommended ointment 2-3 times a day for two weeks. Avoid sun, swimming, and picking.</p>
-            </div>
-            <div className="faq-item">
-              <h3>Can I bring a friend?</h3>
-              <p>Due to limited space and health regulations, we ask that you come to your appointment alone unless medically necessary.</p>
+              <h3>Ascension & Aftercare</h3>
+              <p>Gently cleanse the mark with unscented antibacterial soap. Let the art breathe. Avoid sun and submersion for the first 14 days.</p>
             </div>
           </section>
 
           <section className="map-section">
-            <h2>Location & Contact</h2>
-            <p style={{ marginBottom: '1rem' }}>
-              <strong>Phone:</strong> <a href="tel:+919742980840" style={{ color: 'var(--foreground)', textDecoration: 'none' }}>+91 9742980840</a>
+            <h2 className="highlight" style={{ fontSize: '2rem', marginBottom: '2rem' }}>LOCATION</h2>
+            <p style={{ marginBottom: '2rem', fontSize: '1.2rem' }}>
+              <strong>MODERN COMMS:</strong> <a href="tel:+919742980840" style={{ color: 'var(--accent)' }}>+91 9742980840</a>
             </p>
-            <p># 4, shop, 3, 13th Cross Rd, opposite to KODAVA SAMAJA, Vasanth Nagar, Bengaluru, Karnataka 560001</p>
-            <div className="map-container">
+            <p style={{ marginBottom: '2rem' }}># 4, shop, 3, 13th Cross Rd, opposite to KODAVA SAMAJA, Vasanth Nagar, Bengaluru, Karnataka 560001</p>
+            <div className="map-container" style={{ border: '1px solid var(--surface-border)', filter: 'grayscale(1) contrast(1.2) brightness(0.8)' }}>
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6574159152874!2d77.59184397447477!3d12.99374998732371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae172f5885f9d9%3A0xeab254c024ce7c00!2sOld%20School%20Ink!5e0!3m2!1sen!2sin!4v1774602195006!5m2!1sen!2sin" 
                 width="100%" 
-                height="400" 
+                height="450" 
                 style={{ border: 0 }} 
                 allowFullScreen={false} 
                 loading="lazy">
