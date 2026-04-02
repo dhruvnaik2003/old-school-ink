@@ -112,8 +112,8 @@ export default async function Home() {
               <p>Gently cleanse the mark with unscented antibacterial soap. Let the art breathe. Avoid sun and submersion for the first 14 days.</p>
             </div>
             <div className="faq-item">
-              <h3>Refinement & Touch-ups</h3>
-              <p>Eternal art may require a final ritual to perfect the contrast. We offer a single refinement session within 90 days of the original etching.</p>
+              <h3>The Sacred Consultation</h3>
+              <p>Every mark begins with intent. We invite you to a private consultation to align our spirits and refine the vision before the first etching occurs.</p>
             </div>
           </section>
 
